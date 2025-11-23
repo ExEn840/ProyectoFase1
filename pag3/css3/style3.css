@@ -1,0 +1,61 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#f8f8f8;font-family:Arial,sans-serif;color:#333;}
+
+.menu{background:white;padding:20px 60px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+.logo{height:50px;}
+.enlaces a{margin:0 20px;color:#555;text-decoration:none;font-weight:bold;font-size:14px;}
+.enlaces a:hover{color:#ff6b4e;}
+.boton-contacto{background:#ff6b4e;color:white;padding:12px 30px;border:none;border-radius:30px;}
+
+.menu-chico{background:#f0f0f0;padding:15px 60px;display:flex;gap:40px;font-size:12px;font-weight:bold;color:#777;}
+
+.principal{display:grid;grid-template-columns:1fr 1fr;background:white;}
+.mitad-izq{background:#333;color:white;padding:100px 60px;}
+.mitad-izq h1{font-size:45px;margin-bottom:20px;}
+.mitad-izq p{color:#ccc;margin-bottom:40px;}
+.boton-comprar{background:#ff6b4e;color:white;padding:18px 40px;border:none;border-radius:40px;font-size:16px;}
+.numeros{display:flex;gap:60px;margin-top:50px;}
+.numeros h2{font-size:35px;}
+.numeros p{font-size:14px;color:#999;}
+
+.foto-grande{width:100%;height:100%;object-fit:cover;}
+
+.galeria{display:grid;grid-template-columns:1fr 1fr 1fr;padding:80px;gap:40px;background:white;}
+.galeria img{width:100%;height:300px;object-fit:cover;border-radius:15px;}
+
+.nosotros{display:grid;grid-template-columns:1fr 1fr;padding:80px;gap:60px;background:#f0f0f0;align-items:center;}
+.texto-nosotros h2{font-size:35px;margin-bottom:20px;}
+.etiquetas span{background:#ddd;padding:10px 25px;border-radius:30px;margin-right:10px;font-size:13px;}
+.foto-sofa{width:100%;height:400px;object-fit:cover;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.2);}
+
+.medio{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding:80px;background:white;}
+.fotos-izq{display:flex;flex-direction:column;gap:30px;}
+.fila{display:grid;grid-template-columns:1fr 1fr;gap:30px;}
+.fila img{width:100%;height:220px;object-fit:cover;border-radius:15px;}
+
+.caja-ideas{background:#f0f0f0;padding:60px;border-radius:20px;}
+.caja-ideas h3{font-size:28px;margin-bottom:20px;}
+.flecha{width:60px;height:60px;background:#ff6b4e;color:white;border:none;border-radius:50%;font-size:30px;}
+
+.caja-productos{background:#222;padding:40px;border-radius:20px;color:white;}
+.cuadricula{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:30px;}
+.cuadricula img{width:100%;height:140px;object-fit:cover;border-radius:12px;}
+.boton-vermas{background:#ff6b4e;color:white;padding:15px;width:100%;border:none;border-radius:30px;font-weight:bold;}
+
+.abajo{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;padding:80px;background:white;}
+.promo-izq{background:#333;color:white;padding:60px;border-radius:20px;}
+.descuento{background:#ff6b4e;padding:15px 30px;border-radius:30px;display:inline-block;margin:20px 0;}
+.boton-blanco{background:#ff6b4e;color:white;padding:18px 40px;border:none;border-radius:40px;}
+
+.promo-centro img{width:100%;height:100%;object-fit:cover;border-radius:20px;}
+.promo-der{background:#f0f0f0;padding:60px;border-radius:20px;}
+.precio{color:#ff6b4e;font-size:45px;margin:20px 0;}
+.boton-oscuro{background:#222;color:white;padding:18px 40px;border:none;border-radius:40px;}
+
+.buscar-fijo{position:fixed;bottom:40px;right:40px;}
+.buscar-fijo img{width:70px;height:70px;border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,0.3);}
+
+@media (max-width:1000px){
+  .principal,.nosotros,.medio,.abajo,.galeria{grid-template-columns:1fr;padding:40px;}
+  .enlaces{display:none;}
+}
